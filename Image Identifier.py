@@ -3,11 +3,11 @@ import tensorflow_datasets as tfds
 import numpy as np
 import math
 tfds.disable_progress_bar()
-# importing the fashion MNIST dataset provided by tensorflow
+                                                        # importing the fashion MNIST dataset provided by tensorflow
 dataset,metadata=tfds.load('fashion_mnist',as_supervised=True,with_info=True)
 features_train,features_test=dataset['train'],dataset['test']
-#60k images in features_train
-#10k images in features_test
+                                                        #60k images in features_train
+                                                         #10k images in features_test
 fashion_types=['T-shit/Top','Trouser','Pullover','Dress','Coat','Sandal','Shirt','Sneaker','Bag','Ankle boot']
 # Each image is one of the following fashion types
 num_of_train=metadata.splits['train'].num_examples
